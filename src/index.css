@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-surface text-on-surface antialiased;
+    overscroll-behavior: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .renglon-band-cielo {
+    @apply bg-renglon-cielo-light/60 border-b border-renglon-cielo/40;
+  }
+  .renglon-band-pasto {
+    @apply bg-renglon-pasto-light/60 border-t border-b border-renglon-pasto/20;
+  }
+  .renglon-band-tierra {
+    @apply bg-renglon-tierra-light/50 border-b border-renglon-tierra/40;
+  }
+}

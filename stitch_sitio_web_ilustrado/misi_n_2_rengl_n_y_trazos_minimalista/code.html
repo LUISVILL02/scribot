@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#eaedff", "inverse-primary": "#c3c0ff", "status-completed": "#22C55E", "on-secondary-container": "#004d6a", "on-tertiary-container": "#ffd681", "surface-card": "#FFFFFF", "renglon-pasto": "#22C55E", "primary": "#3525cd", "surface-container-high": "#e2e7ff", "on-background": "#131b2e", "renglon-pasto-light": "#DCFCE7", "surface-paper": "#F8FAFC", "surface-tint": "#4d44e3", "secondary-fixed": "#c4e7ff", "on-secondary-fixed": "#001e2c", "on-tertiary-fixed-variant": "#5c4300", "tertiary": "#5e4400", "on-surface": "#131b2e", "on-error": "#ffffff", "background": "#faf8ff", "secondary": "#00668a", "surface": "#faf8ff", "tertiary-fixed": "#ffdf9f", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "surface-container-highest": "#dae2fd", "on-primary-container": "#dad7ff", "secondary-fixed-dim": "#7bd0ff", "on-secondary-fixed-variant": "#004c69", "error-container": "#ffdad6", "renglon-tierra-light": "#FEF3C7", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "renglon-cielo": "#38BDF8", "on-primary": "#ffffff", "status-pending": "#94A3B8", "outline-variant": "#c7c4d8", "primary-container": "#4f46e5", "tertiary-container": "#7b5b00", "on-primary-fixed-variant": "#3323cc", "on-primary-fixed": "#0f0069", "inverse-surface": "#283044", "outline": "#777587", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "tertiary-fixed-dim": "#f9bd22", "surface-container-low": "#f2f3ff", "on-surface-variant": "#464555", "renglon-tierra": "#B45309", "surface-bright": "#faf8ff", "primary-fixed": "#e2dfff", "inverse-on-surface": "#eef0ff", "primary-fixed-dim": "#c3c0ff", "secondary-container": "#40c2fd", "error": "#ba1a1a", "renglon-cielo-light": "#E0F2FE", "status-progress": "#4F46E5", "on-tertiary-fixed": "#261a00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "margin-mobile": "1rem", "margin": "2rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1.5rem" }, "fontFamily": { "label-lg": [ "Quicksand" ], "body-md": [ "Nunito Sans" ], "headline-lg": [ "Quicksand" ], "body-sm": [ "Nunito Sans" ], "label-md": [ "Quicksand" ], "display": [ "Quicksand" ], "headline-lg-mobile": [ "Quicksand" ], "label-sm": [ "Quicksand" ], "display-mobile": [ "Quicksand" ], "headline-sm": [ "Quicksand" ], "headline-md": [ "Quicksand" ], "body-lg": [ "Nunito Sans" ] }, "fontSize": { "label-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-md": [ "16px", { "lineHeight": "22px", "fontWeight": "600" } ], "display": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "label-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "display-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="ESCRIBOT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaya6xCelQwVy10HfoeF_JloS7HUVmbeY7BXfLcTfhu42KP9ReaagewJsYcFFTWyUkOkyOPc8zSfOHlWHSL13Ql0BApfxhiwfnGunTBG_Wp_zSU7Jq8WtGJNxzGOLMH4y4_vniAE0gLaxnr2QRkxJUKsw8af4ySgCFVf6D8aLqj2HeObpI4JSTmLOYaLLxtLOTbLuimmb3WdxlIsfiNVSd5NNLUvBGpAHqS_7waQc"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">ESCRIBOT</span><span class="font-label-sm text-label-sm text-on-surface-variant">Taller de Caligrafía 5°</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inicio" href="#">Inicio</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mision-1-manos" href="#">Misión 1: Manos</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mision-2-renglon-y-trazos" href="#">Misión 2: Renglón y Trazos</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mision-3-detectives" href="#">Misión 3: Detectives</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mi-progreso" href="#">Mi Progreso</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center gap-space-xs"><a class="px-space-sm py-space-xs bg-renglon-cielo-light text-secondary font-label-sm text-label-sm rounded-full hover:bg-secondary-fixed transition-colors flex items-center gap-space-xs" href="https://padlet.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">open_in_new</span>Padlet</a><a class="px-space-sm py-space-xs bg-renglon-pasto-light text-status-completed font-label-sm text-label-sm rounded-full hover:bg-renglon-pasto-light transition-colors flex items-center gap-space-xs" href="https://canva.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">palette</span>Canva Ed.</a></div><div class="flex items-center gap-space-xs bg-tertiary-fixed px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-tertiary text-[18px]">award_star</span><span class="font-label-sm text-label-sm text-on-tertiary-fixed">Cadete Detective ⭐ 120 pts</span></div><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjNYET-aYwNgKq5BJfvCJc8T8v0afxc18jRe-FZFwdN6Q4V6copC-onuT1k4z7JzxH-dCGjan8kJyCoX7Lb6UUhJBOev_CLaAW5-WMvNEfpefnwgLGcWDyDhBzkj-FaoG6JQ238xwYFI3UmtJ4RipNru2u7dzHhSi_a-SqeefyF7JD_2RR_CgVi_0DpR6seP_m91mDLLiQuE2QoNAImoVH053zPoZn_-02FbXIS4Y"/><span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-on-surface">expand_more</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-5rem)]"><div class="flex flex-col w-full">
+<!-- Top Mission Anchor & Context Bar -->
+<section class="w-full px-gutter py-space-md bg-surface-container-lowest shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-renglon-cielo-light flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-secondary text-[32px]">travel_explore</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm uppercase tracking-wide">Misión Pedagógica 2</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">· 5° Grado Primaria</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Sigo las pistas del renglón</h1>
+</div>
+</div>
+<!-- Module Dual-Tab Switcher (2 Distinct Functional Modules) -->
+<div class="flex items-center p-1.5 bg-surface-container rounded-full self-start md:self-auto shadow-inner" id="module-tab-group">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-md" id="tab-mod2" onclick="switchModule(2)">
+<span class="material-symbols-outlined text-[20px]">map</span>
+<span>Módulo 2: Zonas del Renglón</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface" id="tab-mod3" onclick="switchModule(3)">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+<span>Módulo 3: Construyo mis trazos</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Mission Container -->
+<div class="max-w-7xl mx-auto w-full px-gutter py-space-lg flex flex-col gap-space-xl"><!-- Minimalist Sub-header & Guidance -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-sm border-b border-surface-container-high">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-renglon-cielo-light flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">auto_stories</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Misión 2: El mapa del renglón</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Identifica la altura de cada letra (Cielo, Pasto, Tierra) y practica su trazo antes de escribir en tu cuaderno.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-card px-space-md py-1.5 rounded-full shadow-sm text-on-surface-variant font-label-sm text-label-sm border border-surface-container-high">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span>Paso previo al cuaderno de 5°</span>
+</div>
+</div>
+<!-- ================= MODULO 2: ZONAS DEL RENGLÓN ================= -->
+<div class="flex flex-col gap-space-xl" id="module-2-content">
+<!-- Section 1: Guía Visual Espaciosa con IMAGE_19 -->
+<div class="bg-surface-card rounded-2xl p-space-xl shadow-sm flex flex-col gap-space-md border border-surface-container-high/60">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide font-bold">Referencia Caligráfica</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Las 3 Zonas del Renglón</h3>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-secondary"><span class="w-3 h-3 rounded-full bg-renglon-cielo"></span> Cielo (Altas)</span>
+<span class="flex items-center gap-1.5 text-status-completed"><span class="w-3 h-3 rounded-full bg-renglon-pasto"></span> Pasto (Base)</span>
+<span class="flex items-center gap-1.5 text-renglon-tierra"><span class="w-3 h-3 rounded-full bg-renglon-tierra"></span> Tierra (Bajas)</span>
+</div>
+</div>
+<!-- Spacious Image Container -->
+<div class="w-full rounded-xl overflow-hidden bg-surface-paper border border-surface-container flex items-center justify-center p-space-sm shadow-inner">
+<img alt="Guía del renglón caligráfico con zonas Cielo, Pasto y Tierra" class="w-full max-h-80 object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida/ALJJyrCb4QEgngkFxkwL5e3COoN3bo76bu2pKb3iRks0XGlCJoU9A9lbCfiSTZEKAEHFdSRdUP6f99jRwkwyE2j3fuZO6_k9oOpMLN3sk7-yb-dT1ePI3OCY0LhKjRmhaRt-8LRsIu879w1D-mpm7IKD_fbcxRJ3pgLqzteJRT4rRSo4Km-ad6ziEXC0KQY5eG2ldRdKxyaCao9Oiseit-EFUA7ukSjZUWn0cFVm7B2YRpil"/>
+</div>
+</div>
+<!-- Section 2: Reto Directo ¿Dónde va cada letra? -->
+<div class="bg-surface-card rounded-2xl p-space-xl shadow-sm border border-surface-container-high/60 flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide font-bold">Práctica de Reconocimiento</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">¿Qué zonas ocupa esta letra?</h3>
+</div>
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm text-on-surface-variant bg-surface-container-low px-space-md py-1 rounded-full">
+<span>Progreso:</span>
+<span class="text-primary font-bold" id="game-score">0 / 3</span>
+</div>
+</div>
+<!-- Main interactive letter exercise row -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center bg-surface-paper p-space-lg rounded-xl border border-surface-container">
+<!-- Letter preview -->
+<div class="md:col-span-4 flex flex-col items-center justify-center text-center p-space-md bg-surface-card rounded-xl border border-surface-container shadow-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-space-xs">Letra activa</span>
+<div class="w-24 h-24 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary font-headline-lg text-[64px] font-bold shadow-inner" id="target-letter-display">
+          d
+        </div>
+<span class="mt-space-sm text-label-sm font-label-sm text-secondary font-medium" id="letter-clue-label">Tallo alto hacia arriba</span>
+</div>
+<!-- Interactive Choice Buttons -->
+<div class="md:col-span-8 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<button class="choice-btn p-space-md rounded-xl bg-surface-card hover:bg-surface-container-high text-on-surface text-center border border-surface-container shadow-sm font-label-md text-label-md transition-all flex flex-col items-center gap-space-xs" onclick="checkLetterChoice('pasto')">
+<span class="material-symbols-outlined text-status-completed text-[28px]">grass</span>
+<span class="font-bold">Solo Pasto</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant text-[12px]">a, c, e, o</span>
+</button>
+<button class="choice-btn p-space-md rounded-xl bg-surface-card hover:bg-surface-container-high text-on-surface text-center border border-surface-container shadow-sm font-label-md text-label-md transition-all flex flex-col items-center gap-space-xs" onclick="checkLetterChoice('cielo-pasto')">
+<span class="material-symbols-outlined text-secondary text-[28px]">vertical_align_top</span>
+<span class="font-bold">Cielo + Pasto</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant text-[12px]">b, d, l, t</span>
+</button>
+<button class="choice-btn p-space-md rounded-xl bg-surface-card hover:bg-surface-container-high text-on-surface text-center border border-surface-container shadow-sm font-label-md text-label-md transition-all flex flex-col items-center gap-space-xs" onclick="checkLetterChoice('pasto-tierra')">
+<span class="material-symbols-outlined text-renglon-tierra text-[28px]">vertical_align_bottom</span>
+<span class="font-bold">Pasto + Tierra</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant text-[12px]">g, j, p, q, y</span>
+</button>
+</div>
+<!-- Sutil Feedback Card -->
+<div class="hidden p-space-md rounded-xl flex items-center justify-between border transition-all" id="game-feedback">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px]" id="feedback-icon"></span>
+<span class="font-label-md text-label-md" id="feedback-message"></span>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow hover:opacity-90 transition-opacity" id="next-letter-btn" onclick="nextLetterChallenge()">
+            Siguiente letra
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= MODULO 3: CONSTRUYO MIS TRAZOS ================= -->
+<div class="hidden flex flex-col gap-space-xl" id="module-3-content">
+<div class="bg-surface-card rounded-2xl p-space-xl shadow-sm border border-surface-container-high/60 flex flex-col gap-space-lg">
+<!-- Header of Canvas Section -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide font-bold">Práctica de Trazo</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Pizarra Caligráfica: Letra 'd'</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Primero el círculo en el Pasto (1) y luego el asta recta desde el Cielo (2).</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-7 h-7 rounded-full bg-primary ring-2 ring-offset-2 ring-primary hover:scale-110 transition-transform" onclick="setBrushColor('#3525cd')" title="Azul Tinta"></button>
+<button class="w-7 h-7 rounded-full bg-renglon-pasto ring-1 ring-offset-2 ring-renglon-pasto hover:scale-110 transition-transform" onclick="setBrushColor('#22C55E')" title="Verde Pasto"></button>
+<button class="w-7 h-7 rounded-full bg-secondary ring-1 ring-offset-2 ring-secondary hover:scale-110 transition-transform" onclick="setBrushColor('#00668a')" title="Celeste"></button>
+</div>
+</div>
+<!-- Clean Renglón Canvas Wrapper -->
+<div class="relative w-full h-72 rounded-xl overflow-hidden bg-surface-paper border border-surface-container shadow-inner">
+<!-- 3 Color Bands -->
+<div class="absolute inset-0 flex flex-col pointer-events-none select-none">
+<div class="h-1/3 bg-renglon-cielo-light/60 flex items-center justify-between px-space-md">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">cloud</span> Cielo (Superior)
+          </span>
+</div>
+<div class="h-1/3 bg-renglon-pasto-light/60 flex items-center justify-between px-space-md border-t border-b border-renglon-pasto/20">
+<span class="font-label-sm text-label-sm text-status-completed font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">grass</span> Pasto (Base central)
+          </span>
+</div>
+<div class="h-1/3 bg-renglon-tierra-light/60 flex items-center justify-between px-space-md">
+<span class="font-label-sm text-label-sm text-renglon-tierra font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">terrain</span> Tierra (Inferior)
+          </span>
+</div>
+</div>
+<!-- Ghost letter reference -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20 select-none">
+<span class="font-display text-[190px] font-bold text-on-surface">d</span>
+</div>
+<!-- Interactive Canvas -->
+<canvas class="absolute inset-0 w-full h-full cursor-crosshair z-10" height="288" id="handwriting-canvas" width="800"></canvas>
+</div>
+<!-- Canvas Actions -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs hover:bg-surface-container transition-colors shadow-sm" onclick="clearCanvas()">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Borrar trazo</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center gap-space-xs hover:opacity-90 transition-opacity shadow-sm" onclick="saveCanvasPractice()">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Verificar trazo</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+        Ensaya con libertad antes de escribir con lápiz.
+      </span>
+</div>
+</div>
+<!-- Direct Minimal Reminder for Physical Notebook -->
+<div class="bg-surface-card rounded-2xl p-space-lg shadow-sm border border-surface-container-high/60 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">edit_note</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Momento del Cuaderno de 5°</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Abre tu cuaderno físico y escribe 3 veces la letra 'd' respetando la proporción de las zonas.</p>
+</div>
+</div>
+<button class="w-full sm:w-auto px-space-lg py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow hover:translate-y-0.5 transition-all flex items-center justify-center gap-space-xs shrink-0" id="btn-cuaderno-done" onclick="markCuadernoDone()">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+<span>¡Listo en mi cuaderno!</span>
+</button>
+</div>
+</div>
+<!-- Minimalist Bottom Status -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-card border border-surface-container shadow-sm">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-status-completed text-[20px]">verified</span>
+<span>Misión 2 en progreso · Caligrafía 5° Primaria</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-36 bg-surface-container rounded-full h-2 overflow-hidden hidden sm:block">
+<div class="bg-status-completed h-full rounded-full transition-all duration-500" id="mission-progress-bar" style="width: 65%;"></div>
+</div>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors" onclick="toggleMissionCompletion()">
+      Completar Misión
+    </button>
+</div>
+</div></div>
+</div>
+<script>
+  // Tab Switcher between Module 2 and Module 3
+  function switchModule(modNumber) {
+    const mod2 = document.getElementById('module-2-content');
+    const mod3 = document.getElementById('module-3-content');
+    const tab2 = document.getElementById('tab-mod2');
+    const tab3 = document.getElementById('tab-mod3');
+    const bubbleText = document.getElementById('escribot-bubble-text');
+
+    if (modNumber === 2) {
+      mod2.classList.remove('hidden');
+      mod3.classList.add('hidden');
+      tab2.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-md';
+      tab3.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface';
+      bubbleText.innerHTML = '¡En el <strong>Módulo 2</strong> investigamos las 3 zonas espaciales: Cielo, Pasto y Tierra. ¡Ninguna letra debe perderse del renglón!';
+    } else {
+      mod2.classList.add('hidden');
+      mod3.classList.remove('hidden');
+      tab3.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-md';
+      tab2.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface';
+      bubbleText.innerHTML = '¡Bienvenido al <strong>Módulo 3: Construyo mis trazos</strong>! Practica la dirección y orden del lápiz antes de llevarlo a tu cuaderno.';
+      initCanvas();
+    }
+  }
+
+  // Zone Explorer Logic
+  const zoneInfo = {
+    cielo: '<strong>Zona Cielo (Superior):</strong> Da espacio a los trazos altos. Letras como la <em>b, d, l, t</em> y todas las mayúsculas tocan las nubes pero descansan sus bases sobre el pasto.',
+    pasto: '<strong>Zona Pasto (Central):</strong> Es el hogar principal de la escritura. Aquí residen <em>a, c, e, i, m, n, o, r, s, u, v, w, x, z</em>. No deben salirse ni subir sin permiso.',
+    tierra: '<strong>Zona Tierra (Inferior):</strong> Es el suelo profundo donde cuelgan las colitas de <em>g, j, p, q, y</em>. Su óvalo vive en el pasto y su cola busca las raíces subterráneas.'
+  };
+
+  function inspectZone(zone) {
+    const textEl = document.getElementById('zone-detail-text');
+    if (zoneInfo[zone]) {
+      textEl.innerHTML = zoneInfo[zone];
+    }
+  }
+
+  // Activity 2: Interactive Letter Sorting Challenges
+  const letterRounds = [
+    { letter: 'd', correct: 'cielo-pasto', hint: '"Tiene un tallo largo que sube al cielo..."', explain: '¡Excelente! La letra "d" tiene su óvalo en el Pasto y su bastón alto llega al Cielo.' },
+    { letter: 'a', correct: 'pasto', hint: '"Se mantiene redondita sin subir ni bajar..."', explain: '¡Correcto! La vocal "a" vive completamente dentro de la Zona Pasto.' },
+    { letter: 'g', correct: 'pasto-tierra', hint: '"Su cabeza mira el césped y su lazo desciende al suelo..."', explain: '¡Acertaste! La "g" tiene su círculo en el Pasto y su curva desciende a la Zona Tierra.' }
+  ];
+
+  let currentRound = 0;
+  let correctCount = 0;
+
+  function checkLetterChoice(choice) {
+    const feedbackBox = document.getElementById('game-feedback');
+    const feedbackMsg = document.getElementById('feedback-message');
+    const feedbackIcon = document.getElementById('feedback-icon');
+    const roundData = letterRounds[currentRound];
+
+    feedbackBox.classList.remove('hidden');
+
+    if (choice === roundData.correct) {
+      feedbackBox.className = 'p-space-md rounded-xl flex items-center justify-between bg-renglon-pasto-light text-status-completed shadow-sm';
+      feedbackIcon.textContent = 'check_circle';
+      feedbackMsg.innerHTML = roundData.explain;
+      correctCount = Math.min(3, correctCount + 1);
+      document.getElementById('game-score').textContent = correctCount + ' / 3';
+    } else {
+      feedbackBox.className = 'p-space-md rounded-xl flex items-center justify-between bg-error-container text-on-error-container shadow-sm';
+      feedbackIcon.textContent = 'warning';
+      feedbackMsg.innerHTML = '¡Revisa las pistas! Esa letra no corresponde a esa franja. Vuelve a intentarlo.';
+    }
+  }
+
+  function nextLetterChallenge() {
+    currentRound = (currentRound + 1) % letterRounds.length;
+    const nextData = letterRounds[currentRound];
+    document.getElementById('target-letter-display').textContent = nextData.letter;
+    document.getElementById('letter-clue-label').textContent = nextData.hint;
+    document.getElementById('game-feedback').classList.add('hidden');
+  }
+
+  // Activity 3: Suspicious Word Detective Inspection
+  function inspectSuspiciousWord(cardId, isCulprit) {
+    const resultBox = document.getElementById('detective-case-result');
+    const resultTitle = document.getElementById('case-result-title');
+    const resultDesc = document.getElementById('case-result-desc');
+    const resultIcon = document.getElementById('case-result-icon');
+
+    resultBox.classList.remove('hidden');
+
+    if (isCulprit) {
+      resultTitle.textContent = '¡Pista descubierta! Muestra B es la culpable';
+      resultDesc.textContent = '¡Muy bien observado! En "pato", la letra \'p\' está flotando sobre el cielo. Su barriga debe estar en el pasto y su cola bajando hacia la tierra.';
+      resultIcon.textContent = 'verified';
+      resultIcon.className = 'material-symbols-outlined text-status-completed text-[28px]';
+    } else {
+      resultTitle.textContent = 'Muestra ' + cardId + ' está en regla';
+      resultDesc.textContent = 'Esta palabra está alineada de forma regular sobre el renglón. ¡Sigue buscando al impostor!';
+      resultIcon.textContent = 'info';
+      resultIcon.className = 'material-symbols-outlined text-secondary text-[28px]';
+    }
+  }
+
+  // Interactive HTML5 Canvas (Drawing whiteboard)
+  let canvas, ctx;
+  let isDrawing = false;
+  let strokeColor = '#3525cd';
+
+  function initCanvas() {
+    canvas = document.getElementById('handwriting-canvas');
+    if (!canvas) return;
+    ctx = canvas.getContext('2d');
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = 5;
+
+    // Mouse Listeners
+    canvas.onmousedown = (e) => startDraw(e);
+    canvas.onmousemove = (e) => draw(e);
+    canvas.onmouseup = () => stopDraw();
+    canvas.onmouseleave = () => stopDraw();
+
+    // Touch Listeners for Tablets / iPads
+    canvas.ontouchstart = (e) => {
+      e.preventDefault();
+      const touch = e.touches[0];
+      const mouseEvent = new MouseEvent('mousedown', {
+        clientX: touch.clientX,
+        clientY: touch.clientY
+      });
+      canvas.dispatchEvent(mouseEvent);
+    };
+
+    canvas.ontouchmove = (e) => {
+      e.preventDefault();
+      const touch = e.touches[0];
+      const mouseEvent = new MouseEvent('mousemove', {
+        clientX: touch.clientX,
+        clientY: touch.clientY
+      });
+      canvas.dispatchEvent(mouseEvent);
+    };
+
+    canvas.ontouchend = (e) => {
+      e.preventDefault();
+      const mouseEvent = new MouseEvent('mouseup', {});
+      canvas.dispatchEvent(mouseEvent);
+    };
+  }
+
+  function getCanvasCoords(e) {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    return {
+      x: (e.clientX - rect.left) * scaleX,
+      y: (e.clientY - rect.top) * scaleY
+    };
+  }
+
+  function startDraw(e) {
+    isDrawing = true;
+    const { x, y } = getCanvasCoords(e);
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+  }
+
+  function draw(e) {
+    if (!isDrawing) return;
+    const { x, y } = getCanvasCoords(e);
+    ctx.strokeStyle = strokeColor;
+    ctx.lineTo(x, y);
+    ctx.stroke();
+  }
+
+  function stopDraw() {
+    if (isDrawing) {
+      ctx.closePath();
+      isDrawing = false;
+    }
+  }
+
+  function clearCanvas() {
+    if (ctx && canvas) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+  }
+
+  function setBrushColor(color) {
+    strokeColor = color;
+  }
+
+  function saveCanvasPractice() {
+    alert('¡Excelente ensayo digital! Recuerda que este ejercicio te prepara para escribir con tu lápiz en papel.');
+  }
+
+  function markCuadernoDone() {
+    const btn = document.getElementById('btn-cuaderno-done');
+    btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>¡Completado en Cuaderno! ⭐</span>';
+    btn.classList.remove('bg-primary-container');
+    btn.classList.add('bg-status-completed');
+    document.getElementById('mission-progress-bar').style.width = '100%';
+  }
+
+  function demoAnimateStroke() {
+    alert('Observa los puntos numerados: Primero traza el óvalo (1) y luego baja el trazo vertical (2).');
+  }
+
+  function toggleAudioCue() {
+    alert('Audio-pista: "Recuerda, cadete: El pasto es la pista de despegue. El cielo es para las letras altas y la tierra para las que tienen raíces."');
+  }
+
+  function toggleMissionCompletion() {
+    document.getElementById('mission-progress-bar').style.width = '100%';
+    alert('¡Insignia "Guardián del Renglón" desbloqueada! Tus trazos respetan los tres niveles espaciales.');
+  }
+
+  // Auto initialize when window is ready
+  window.addEventListener('DOMContentLoaded', () => {
+    initCanvas();
+  });
+</script></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary">smart_toy</span><p class="font-body-sm text-body-sm text-on-surface-variant">ESCRIBOT · Laboratorio de Caligrafía y Escritura Detective para Primaria</p></div><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">Nivel 5° Primaria · Renglón Tridimensional</span><div class="flex gap-space-xs"><span class="w-3 h-3 rounded-full bg-renglon-cielo" title="Cielo"></span><span class="w-3 h-3 rounded-full bg-renglon-pasto" title="Pasto"></span><span class="w-3 h-3 rounded-full bg-renglon-tierra" title="Tierra"></span></div></div></div></footer></body></html>
