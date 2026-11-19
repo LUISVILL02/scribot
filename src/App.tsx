@@ -8,7 +8,7 @@ import Mision3 from "./pages/Mision3";
 function App() {
   return (
     <PointsProvider>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/mision-1" element={<Mision1 />} />

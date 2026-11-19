@@ -120,7 +120,7 @@ export default function Mision1() {
                   <img
                     alt="Guía ilustrada de ejercicios de motricidad y agarre de lápiz"
                     className="w-full h-auto max-h-[460px] object-cover rounded-xl transition-all duration-300"
-                    src="/assets/mision-1.jpg"
+                    src={`${import.meta.env.BASE_URL}assets/mision-1.jpg`}
                   />
                   <div className="absolute top-4 right-4 bg-surface-card/90 backdrop-blur-md px-space-md py-1 rounded-full shadow-sm flex items-center gap-1.5 font-label-md text-label-md text-primary font-bold">
                     <MaterialIcon name="timer" size={18} />

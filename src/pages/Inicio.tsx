@@ -116,7 +116,7 @@ export default function Inicio() {
               <img
                 alt="ESCRIBOT detective robot"
                 className="w-full h-full object-contain filter drop-shadow-xl"
-                src="/assets/inicio.jpg"
+                src={`${import.meta.env.BASE_URL}assets/inicio.jpg`}
               />
             </div>
           </section>

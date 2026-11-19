@@ -255,7 +255,7 @@ export default function Mision3() {
               </div>
               <div className="lg:col-span-5">
                 <div className="relative rounded-xl overflow-hidden shadow-md bg-surface-card border border-surface-container-high">
-                  <img alt="Kid detective theme handwriting review desk with ESCRIBOT" className="w-full h-72 object-cover object-center" src="/assets/mision-3.jpg" />
+                  <img alt="Kid detective theme handwriting review desk with ESCRIBOT" className="w-full h-72 object-cover object-center" src={`${import.meta.env.BASE_URL}assets/mision-3.jpg`} />
                   <div className="p-space-sm bg-surface-card/95 border-t border-surface-container-high flex items-center gap-space-sm">
                     <MaterialIcon name="smart_toy" size={20} className="text-primary shrink-0" />
                     <p className="font-body-sm text-body-sm text-on-surface"><strong>Agente ESCRIBOT:</strong> «Toca con tu lupa las 3 irregularidades del renglón para descifrar el caso.»</p>

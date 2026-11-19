@@ -140,7 +140,7 @@ export default function Mision2() {
                     <img
                       alt="Guía del renglón caligráfico con zonas Cielo, Pasto y Tierra"
                       className="w-full max-h-80 object-contain rounded-lg"
-                      src="/assets/mision-2.jpg"
+                      src={`${import.meta.env.BASE_URL}assets/mision-2.jpg`}
                     />
                   </div>
                 </StitchCard>

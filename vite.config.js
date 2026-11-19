@@ -2,7 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-export default defineConfig({
+// GitHub Pages serves the app from /scribot/; dev keeps the root path.
+export default defineConfig(({ command }) => ({
+  base: command === "build" ? "/scribot/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
@@ -13,4 +15,4 @@ export default defineConfig({
     port: 5173,
     open: true,
   },
-});
+}));
